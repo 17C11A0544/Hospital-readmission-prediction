@@ -20,7 +20,7 @@ def y_predict():
     prediction = model.predict(x_test)
     print(prediction)
     output=prediction[0]
-    if(output==2):
+    if(output==1):
         pred = "Readmits in the hospital"
     else:
         pred = "Does not readmit in the hospital"
